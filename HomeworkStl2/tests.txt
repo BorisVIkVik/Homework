@@ -1,0 +1,20 @@
+Tests.
+first test:
+Input:
+First Guy 1 1 1
+Second Guy 5 5 5
+Third Guy 3 3 3
+Output: 
+Second Guy
+Third Guy
+First Guy
+
+second test:
+Input:
+First Guy 1 2 3
+Second Guy 5 4 1
+Third Guy 4 4 4
+Output: 
+Third Guy
+Second Guy
+First Guy
