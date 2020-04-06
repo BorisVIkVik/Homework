@@ -14,7 +14,8 @@ int main()
 		cin >> v1[i];
 	}
 	sort(v1.begin(), v1.end());
-	for (int i = n-1; i > -1; i--)
+	reverse(v1.begin(), v1.end());
+	for (int i = 0; i < n; i++)
 	{
 		cout << v1[i] << endl;
 	}
