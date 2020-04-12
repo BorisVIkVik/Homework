@@ -1,0 +1,29 @@
+Tests.
+
+first test:
+Input:
+3
+2 
+Output: 
+1
+
+second test:
+Input:
+5
+3
+Output: 
+1
+
+thied test:
+Input:
+31
+34
+Output:
+293930
+
+fourth test:
+Input:
+7
+3
+Output:
+0
