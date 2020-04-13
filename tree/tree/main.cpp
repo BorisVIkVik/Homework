@@ -36,6 +36,49 @@ void add(int data, node*& branch)
 		add(data, branch->rightBranch);
 	}
 }
+node*& deleteNode(node*& root, int value_)
+{
+	if (!root)return root;
+	if (value_ == root->value)
+	{
+		node* tmp;
+		if (root->rightBranch == NULL)
+		{
+			tmp = root->leftBranch;
+		}
+		else
+		{
+			node* ptr = root->rightBranch;
+			if (ptr->leftBranch == NULL) {
+				ptr->leftBranch = root->leftBranch;
+				tmp = ptr;
+			}
+			else {
+
+				node* pmin = ptr->leftBranch;
+				while (pmin->leftBranch != NULL) {
+					ptr = pmin;
+					pmin = ptr->leftBranch;
+				}
+				ptr->leftBranch = pmin->rightBranch;
+				pmin->leftBranch = root->leftBranch;
+				pmin->rightBranch = root->rightBranch;
+				tmp = pmin;
+			}
+		}
+		delete root;
+		return tmp;
+	}
+	else if (value_ < root->value)
+	{
+		root->leftBranch = deleteNode(root->leftBranch, value_);
+	}
+	else if (value_ > root->value)
+	{
+		root->rightBranch = deleteNode(root->rightBranch, value_);
+	}
+	return root;
+}
 int tabs = 0;
 void printTree(node*& root)
 {
@@ -59,6 +102,7 @@ int main()
 	{
 		add(s[i], Root);
 	}
+	deleteNode(Root, -3);
 	printTree(Root);
 	///vector<vector<int>> v1(0, vector<int>(0));
 }
