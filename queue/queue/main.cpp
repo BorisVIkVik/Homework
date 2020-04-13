@@ -20,6 +20,7 @@ struct queue
 		bool start;
 		bool end;
 		bool f;
+		int size;
 		queue(int size = SIZE)
 		{
 			start = 0;
@@ -28,6 +29,7 @@ struct queue
 			arr = new int[size]; 
 			pointerTop = -1;//присваеваем индексу добавляемого элемента значение 
 			pointerBot = 0;
+			size = 0;
 		}
 		~queue()
 		{
@@ -50,6 +52,7 @@ struct queue
 			{
 				arr[++pointerTop] = x;
 				start = 1;
+				size++;
 				f = 0;
 			}
 		}
@@ -81,6 +84,7 @@ struct queue
 					f = 1;
 					//return 0;
 				}
+				size--;
 				if (pointerBot+1 == SIZE)
 				{
 					int tmp = arr[pointerBot];
@@ -101,6 +105,10 @@ struct queue
 			//	pointerBot = 0;
 			//	end = 0;
 			//}
+		}
+		int getSize()
+		{
+			return size;
 		}
 		int front()
 		{
@@ -148,6 +156,7 @@ int main()
 	bruh.push(5);
 	bruh.push(6);
 	bruh.push(7);
+	cout << bruh.getSize() << endl;
 	cout << bruh.front() << endl;
 	cout << bruh.back() << endl;
 	cout << bruh.pop() << endl;
@@ -176,6 +185,7 @@ int main()
 	bruh.push(6);
 	//cout << bruh.pointerTop << endl;
 	bruh.push(7);
+
 	//cout << bruh.pointerTop << endl;
 	cout << bruh.front() << endl;
 	cout << bruh.back() << endl;
