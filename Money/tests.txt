@@ -1,0 +1,25 @@
+Tests.
+
+first test:
+Input:
+130
+Output: 
+3
+
+second test:
+Input:
+567
+Output: 
+-1
+
+thied test:
+Input:
+1234
+Output:
+-1
+
+fourth test:
+Input:
+11570
+Output:
+25
