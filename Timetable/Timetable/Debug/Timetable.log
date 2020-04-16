@@ -1,0 +1,14 @@
+﻿  main.cpp
+D:\Work\Homework\Timetable\Timetable\main.cpp(9,38): warning C4244: аргумент: преобразование "__int64" в "const unsigned int", возможна потеря данных
+D:\Work\Homework\Timetable\Timetable\main.cpp(26,29): warning C4244: аргумент: преобразование "__int64" в "const unsigned int", возможна потеря данных
+D:\Work\Homework\Timetable\Timetable\main.cpp(33,22): warning C4244: аргумент: преобразование "_Ty" в "const unsigned int", возможна потеря данных
+D:\Work\Homework\Timetable\Timetable\main.cpp(33,22): warning C4244:         with
+D:\Work\Homework\Timetable\Timetable\main.cpp(33,22): warning C4244:         [
+D:\Work\Homework\Timetable\Timetable\main.cpp(33,22): warning C4244:             _Ty=__int64
+D:\Work\Homework\Timetable\Timetable\main.cpp(33,22): warning C4244:         ]
+D:\Work\Homework\Timetable\Timetable\main.cpp(34,22): warning C4244: аргумент: преобразование "_Ty" в "const unsigned int", возможна потеря данных
+D:\Work\Homework\Timetable\Timetable\main.cpp(34,22): warning C4244:         with
+D:\Work\Homework\Timetable\Timetable\main.cpp(34,22): warning C4244:         [
+D:\Work\Homework\Timetable\Timetable\main.cpp(34,22): warning C4244:             _Ty=__int64
+D:\Work\Homework\Timetable\Timetable\main.cpp(34,22): warning C4244:         ]
+  Timetable.vcxproj -> D:\Work\Homework\Timetable\Debug\Timetable.exe
