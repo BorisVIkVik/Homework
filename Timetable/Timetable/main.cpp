@@ -28,19 +28,23 @@ int main()
 	{
 		room[i] = 0;
 	}
+	long long tmpAud = 0;
 	for (int i = 0; i < n; i++)
 	{
+
 		room[timeTable[i][0]]++;
 		room[timeTable[i][1]]--;
 	}
 	long long auditories = 0;
+	int maxVal = 0;
 	for (int i = 0; i < max; i++)
 	{
-		if (room[i] > 0)
-		{
 			auditories += room[i];
-		}
+			if (maxVal < auditories)
+			{
+				maxVal = auditories;
+			}
 	}
-	cout << auditories << endl;
+	cout << maxVal << endl;
 	return 0;
 }
