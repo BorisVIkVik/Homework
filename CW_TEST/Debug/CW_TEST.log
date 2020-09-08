@@ -1,0 +1,7 @@
+﻿  main.cpp
+D:\СЦ\CW_TEST\main.cpp(21,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\СЦ\CW_TEST\main.cpp(28,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\СЦ\CW_TEST\main.cpp(45,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\СЦ\CW_TEST\main.cpp(51,23): warning C4018: <: несоответствие типов со знаком и без знака
+D:\СЦ\CW_TEST\main.cpp(64,20): warning C4018: <: несоответствие типов со знаком и без знака
+  CW_TEST.vcxproj -> D:\СЦ\CW_TEST\Debug\CW_TEST.exe
